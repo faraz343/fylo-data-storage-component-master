@@ -1,0 +1,121 @@
+html{
+  background-color: white;
+  
+}
+body{
+  background-color: hsl(229, 57%, 11%);
+  height:600px;
+  width:90%;
+  margin:auto;
+  margin-top: 4%;
+  position: relative;
+}
+.base{
+  position: absolute;
+  bottom:0;
+  height:50%;
+  width:100%;
+}
+.flex-container {
+  display: flex;
+  width:60%;
+  z-index:100;
+  position: absolute;
+  left:20%;
+  top:40%;
+
+}
+.container-1{
+  width:40%;
+  z-index: 100;
+  background-color:hsl(228, 56%, 26%);
+  padding-top:6%;
+  padding-left: 6%;
+  padding-bottom: 6%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 100px;
+  margin-right: 4%;
+}
+.container-2{
+width:60%;
+background-color:hsl(228, 56%, 26%);
+z-index: 100;
+padding:6%;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-right-radius: 10px;
+color:hsl(243, 100%, 93%);
+font-family: 'Raleway', sans-serif;
+font-size: 14px;
+height:80%;
+align-self: flex-end;
+}
+.img-border{
+    background-color: hsl(229, 57%, 11%);
+    padding:7px;
+    padding-top:16px;
+    border-radius: 6px;
+    margin-right:5%;
+}
+.bar{
+  width:90%;
+  background-color:  hsl(229, 57%, 11%);
+  border-radius: 10px;
+  padding:2px;
+  padding-bottom: 3px;
+  margin-top: 6%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+}
+.progress{
+  width:81.5%;
+  background-image: linear-gradient(to right , hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+  border-radius: 10px;
+  padding-bottom: 0;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 94%;
+
+}
+.corner{
+  position: absolute;
+  background-color: White;
+  left:66%;
+  top:36%;
+  z-index:101;
+  padding:1%;
+  border-radius: 6px;
+}
+@media screen and (max-width:600px) {
+  body{
+    width:100%;
+  }
+  .base{
+    height:100%;
+  }
+  .flex-container{
+    width:80%;
+    left:10%;
+    top:25%;
+    flex-direction: column;
+  }
+  .container-1{
+    width:94%;
+    margin-bottom: 4%;
+  }
+  .container-2{
+    width:88%;
+  }
+  .corner{
+    top:70%;
+    left:36%;
+  }
+}
